@@ -11,7 +11,7 @@ module I18nCache
 
     cache[cache_key] || begin
       result = super
-      cache[cache_key] = result if result
+      cache[cache_key] = result
       result
     end
   end
